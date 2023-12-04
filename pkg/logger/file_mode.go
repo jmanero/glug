@@ -1,7 +1,6 @@
 package logger
 
 import (
-	"fmt"
 	"io/fs"
 	"strconv"
 )
@@ -26,6 +25,5 @@ func (mode FileMode) String() string {
 
 // Type description for CLI usage
 func (FileMode) Type() string {
-	fmt.Println("CALL TYPE")
-	return "fs.File"
+	return "fs.FileMode"
 }
